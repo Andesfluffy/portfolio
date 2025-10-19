@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { cn } from "@/lib/utils";
@@ -30,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body
         className={cn(
           geistSans.variable,
@@ -38,15 +37,13 @@ export default function RootLayout({
           "min-h-screen bg-background text-foreground antialiased"
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Aurora />
-          <Noise />
-          <Header />
-          <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            {children}
-          </main>
-          <Footer />
-        </ThemeProvider>
+        <Aurora />
+        <Noise />
+        <Header />
+        <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

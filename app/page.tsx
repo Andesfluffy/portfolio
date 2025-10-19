@@ -24,7 +24,7 @@ const categories = [
 export default function Home() {
   return (
     <div className="space-y-16">
-      <section className="relative overflow-hidden rounded-[32px] border border-white/10 bg-neutral-950 text-white shadow-2xl">
+      <section className="relative overflow-hidden rounded-[32px] border border-white/10 bg-[#080312] text-white shadow-2xl">
         <div className="absolute inset-0">
           <motion.div
             initial={{ scale: 1.01 }}
@@ -38,16 +38,16 @@ export default function Home() {
               fill
               priority
               placeholder="blur"
-              quality={90}
+              quality={95}
               sizes="100vw"
-              className="object-cover object-[50%_26%] sm:object-[50%_40%] md:object-[50%_48%] lg:object-[50%_58%]"
+              className="object-cover object-[50%_18%] sm:object-[50%_38%] md:object-[50%_46%] lg:object-[50%_56%]"
             />
           </motion.div>
-          <div className="absolute inset-0 bg-gradient-to-br from-neutral-950/88 via-neutral-950/78 to-neutral-900/55" />
-          <div className="absolute inset-0 [mask-image:radial-gradient(1200px_600px_at_50%_-10%,black,transparent)]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/82 via-[#120d28]/75 to-[#1b0f2f]/55" />
+          <div className="absolute inset-0 [mask-image:radial-gradient(1200px_620px_at_50%_-14%,black,transparent)]" />
         </div>
 
-        <div className="relative z-10 flex flex-col justify-between gap-10 p-6 sm:p-10 lg:p-14 xl:p-16 min-h-[78svh] sm:min-h-[70vh] lg:min-h-[66vh]">
+        <div className="relative z-10 flex flex-col justify-between gap-10 p-6 sm:p-10 lg:p-14 xl:p-16 min-h-[88svh] sm:min-h-[72vh] lg:min-h-[66vh]">
           <div className="flex flex-wrap items-center gap-4 text-sm text-white/70">
             <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 uppercase tracking-[0.3em]">
               <span className="text-xs">Full‑Stack Developer</span>
@@ -63,7 +63,7 @@ export default function Home() {
               <button
                 type="button"
                 aria-label="Next showcase"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-[#f2643c] text-white transition hover:bg-[#f2643c]/90"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/40 bg-primary text-primary-foreground transition hover:bg-primary/90"
               >
                 <ArrowRight className="size-5" />
               </button>
@@ -81,8 +81,8 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight"
             >
-              Building <span className="text-[#f2643c]">web apps</span> <br />
-              and data‑driven dashboards
+              Crafting <span className="bg-gradient-to-r from-[#c7a3ff] via-[#8f6bff] to-[#7dd3fc] bg-clip-text text-transparent">digital experiences</span>
+              <br /> that feel personal, polished, and alive.
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -90,11 +90,9 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-base sm:text-lg text-white/80"
             >
-              I&apos;m <strong>Damola Oyeyemi</strong>, a full‑stack software developer.
-              I design and ship world‑class experiences with <strong>React</strong>,
-              <strong> Next.js</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>,
-              and backend services in <strong>Python</strong> with <strong>SQL</strong>.
-              I care deeply about performance, accessibility, and clean DX.
+              I&apos;m <strong>Damola Oyeyemi</strong>, a full‑stack engineer who loves pairing thoughtful strategy with elegant code.
+              From calm dashboards to expressive marketing sites, I help teams tell their story with React, Next.js, TypeScript,
+              and dependable Python backends. Every project is an invitation to craft something welcoming, inclusive, and delightfully fast.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -105,10 +103,10 @@ export default function Home() {
               <Button
                 size="lg"
                 asChild
-                className="h-12 rounded-full bg-[#f2643c] px-8 text-base font-medium text-white transition hover:bg-[#f2643c]/90"
+                className="h-12 rounded-full bg-primary px-8 text-base font-medium text-primary-foreground transition hover:bg-primary/90"
               >
                 <Link href="mailto:hello@damolaoyeyemi.dev">
-                  Start a Project
+                  Start a Conversation
                 </Link>
               </Button>
               <Button
@@ -117,7 +115,7 @@ export default function Home() {
                 asChild
                 className="h-12 rounded-full border-white/30 bg-white/10 px-8 text-base font-medium text-white backdrop-blur transition hover:bg-white/20 hover:text-white"
               >
-                <Link href="/projects">See Case Studies</Link>
+                <Link href="/projects">Browse Recent Wins</Link>
               </Button>
             </motion.div>
           </div>
@@ -129,10 +127,10 @@ export default function Home() {
             className="flex flex-col gap-2 text-sm text-white/70 sm:flex-row sm:items-center"
           >
             <div className="flex items-center gap-2 text-white">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f2643c]/10 text-[#f2643c]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/15 text-primary">
                 <Mail className="size-5" />
               </div>
-              <span className="font-medium">hello@jacksonbuilds.com</span>
+              <span className="font-medium">hello@damolaoyeyemi.dev</span>
             </div>
             <span
               className="hidden sm:block h-px flex-1 bg-white/20"
