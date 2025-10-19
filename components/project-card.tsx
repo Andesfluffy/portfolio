@@ -15,7 +15,7 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.4, delay: index * 0.06 }}
     >
-      <Link href={project.url ?? `#/projects/${project.slug}` }>
+      <Link href={`/projects/${project.slug}`} prefetch>
         <Card className="overflow-hidden h-full hover:shadow-lg transition-shadow">
           <div className="relative aspect-[16/9]">
             <Image
