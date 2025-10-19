@@ -30,31 +30,10 @@ export default function Home() {
           <div className="absolute inset-0 [mask-image:radial-gradient(1200px_620px_at_50%_-14%,black,transparent)]" />
         </div>
 
-        <div className="relative z-10 flex flex-col gap-10 p-6 sm:p-10 lg:min-h-[60vh] lg:gap-14 lg:p-14 xl:gap-16 xl:p-16">
-          <div className="flex flex-wrap items-center gap-4 text-sm text-white/70 lg:justify-between">
-              <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 uppercase tracking-[0.3em]">
-                <span className="text-xs">Full‑Stack Developer</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <button
-                  type="button"
-                  aria-label="Previous showcase"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur transition hover:border-white/40 hover:bg-white/15"
-                >
-                  <ArrowLeft className="size-5" />
-                </button>
-                <button
-                  type="button"
-                  aria-label="Next showcase"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/40 bg-primary text-primary-foreground transition hover:bg-primary/90"
-                >
-                  <ArrowRight className="size-5" />
-                </button>
-              </div>
-              <div className="flex items-center gap-2 text-xs uppercase tracking-[0.3em]">
-                <span className="inline-flex h-2 w-2 rounded-full bg-[#34D399]" />
-                <span>Available</span>
-              </div>
+        <div className="relative z-10 grid gap-10 p-6 sm:p-10 lg:min-h-[60vh] lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center lg:gap-14 lg:p-14 xl:grid-cols-[minmax(0,1fr)_420px] xl:gap-16 xl:p-16">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-white/70 lg:col-span-2 lg:justify-between">
+            <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 uppercase tracking-[0.3em]">
+              <span className="text-xs">Full‑Stack Developer</span>
             </div>
 
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,400px)] lg:items-stretch lg:gap-14 xl:grid-cols-[minmax(0,1.05fr)_minmax(340px,440px)] xl:gap-16">
@@ -132,7 +111,6 @@ export default function Home() {
               <div className="absolute -top-10 left-10 h-20 w-20 rounded-full border border-white/20" />
             </motion.div>
           </div>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -154,6 +132,34 @@ export default function Home() {
               <span className="inline-flex h-2 w-2 rounded-full bg-white/30" />
               <span className="inline-flex h-2 w-2 rounded-full bg-white/20" />
             </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="relative aspect-[3/5] overflow-hidden rounded-[28px] border border-white/15 bg-white/5 shadow-[0_25px_70px_-25px_rgba(124,58,237,0.35)] sm:mx-auto sm:max-w-sm lg:col-start-2 lg:row-span-3 lg:row-start-2 lg:mx-0 lg:h-full lg:max-w-none lg:aspect-[7/10]"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-primary/15" />
+            <motion.div
+              initial={{ scale: 1 }}
+              animate={{ scale: 1.02 }}
+              transition={{ duration: 18, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={heroImg}
+                alt="Portrait of Damola Oyeyemi in a white shirt against a light backdrop"
+                fill
+                priority
+                placeholder="blur"
+                quality={95}
+                sizes="(min-width: 1280px) 420px, (min-width: 1024px) 380px, (min-width: 640px) 50vw, 90vw"
+                className="object-cover object-[50%_40%]"
+              />
+            </motion.div>
+            <div className="absolute -right-12 bottom-12 hidden h-36 w-36 rounded-full bg-primary/40 blur-3xl sm:block" />
+            <div className="absolute -top-10 left-10 h-20 w-20 rounded-full border border-white/20" />
           </motion.div>
         </div>
       </section>
