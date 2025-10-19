@@ -6,14 +6,14 @@ import { projects } from "@/data/projects";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-type Props = { params: Promise<{ slug: string }> };
+type Props = { params: { slug: string } };
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug } = params;
   const project = projects.find((p) => p.slug === slug);
   if (!project) return {};
   const title = `${project.title} | Projects`;
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProjectPage({ params }: Props) {
-  const { slug } = await params;
+  const { slug } = params;
   const project = projects.find((p) => p.slug === slug);
   if (!project) notFound();
 
@@ -92,4 +92,3 @@ export default async function ProjectPage({ params }: Props) {
     </div>
   );
 }
-

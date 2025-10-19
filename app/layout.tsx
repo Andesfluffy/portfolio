@@ -19,8 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Web Apps",
-  description: "Modern portfolio showcasing web applications, built with Next.js, Tailwind, shadcn/ui, and Framer Motion.",
+  title: "Damola Oyeyemi — Full‑Stack Developer",
+  description:
+    "Full‑stack engineer crafting world‑class web apps, data‑driven dashboards, and elegant UI with Next.js, React, Python, Tailwind CSS, and SQL.",
 };
 
 export default function RootLayout({

@@ -26,7 +26,7 @@ export function Header() {
           <Link href="/" className="font-semibold tracking-tight inline-flex items-center gap-2">
             <span className="inline-block h-2 w-2 rounded-full bg-[radial-gradient(circle,_#A78BFA,_transparent_60%)]" />
             <span className="bg-clip-text text-transparent bg-[linear-gradient(90deg,_#A78BFA_0%,_#22D3EE_50%,_#34D399_100%)]">
-              My Portfolio
+              Damola Oyeyemi
             </span>
           </Link>
         </motion.div>

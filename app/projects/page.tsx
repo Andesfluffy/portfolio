@@ -2,7 +2,7 @@ import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/project-card";
 
 export const metadata = {
-  title: "Projects | Portfolio",
+  title: "Projects — Damola Oyeyemi",
 };
 
 export default function ProjectsPage() {
@@ -23,4 +23,3 @@ export default function ProjectsPage() {
     </div>
   );
 }
-
