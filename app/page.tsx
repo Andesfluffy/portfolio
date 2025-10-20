@@ -38,35 +38,13 @@ export default function Home() {
                 <span>Portfolio</span>
               </span>
             </div>
-          </div>
-
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,400px)] lg:items-stretch lg:gap-14 xl:grid-cols-[minmax(0,1.05fr)_minmax(340px,440px)] xl:gap-16">
-            <div className="max-w-xl space-y-6">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight"
-              >
-                Crafting <span className="bg-gradient-to-r from-[#c7a3ff] via-[#8f6bff] to-[#7dd3fc] bg-clip-text text-transparent">digital experiences</span>
-                <br /> that feel personal, polished, and alive.
-              </motion.h1>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-base sm:text-lg text-white/80"
-              >
-                <Link href="mailto:hello@damolaoyeyemi.dev">Let&apos;s Talk</Link>
-              </Button>
-            </nav>
           </header>
 
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,420px)] lg:items-center">
             <div className="max-w-xl space-y-10">
               <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-[#f9c3a2]">
                 <span className="inline-flex items-center gap-2 rounded-full border border-[#f8bfa8]/40 bg-[#f8bfa8]/10 px-4 py-1 text-[0.7rem] text-[#fdd3b7] shadow-[0_8px_30px_rgba(248,191,168,0.25)]">
-                  Full‑Stack Developer
+                  Full-Stack Developer
                 </span>
                 <span className="hidden items-center gap-2 sm:inline-flex">
                   <span className="h-1 w-1 rounded-full bg-[#f8bfa8]" />
@@ -80,12 +58,10 @@ export default function Home() {
                   transition={{ duration: 0.5 }}
                   className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl"
                 >
-                  Crafting
-                  {" "}
+                  Crafting{" "}
                   <span className="bg-gradient-to-r from-[#ffe1cc] via-[#f9c3a2] to-[#ffd7ba] bg-clip-text text-transparent">
                     digital experiences
-                  </span>
-                  {" "}
+                  </span>{" "}
                   that feel personal, polished, and alive.
                 </motion.h1>
                 <motion.p
@@ -94,9 +70,7 @@ export default function Home() {
                   transition={{ duration: 0.6, delay: 0.1 }}
                   className="text-base text-white/70 sm:text-lg"
                 >
-                  I&apos;m <strong>Damola Oyeyemi</strong>, a full‑stack engineer who loves pairing thoughtful strategy with elegant code.
-                  From calm dashboards to expressive marketing sites, I help teams tell their story with React, Next.js, TypeScript, and dependable Python backends.
-                  Every project is an invitation to craft something welcoming, inclusive, and delightfully fast.
+                  I&apos;m <strong>Damola Oyeyemi</strong>, a full-stack engineer who loves pairing thoughtful strategy with elegant code. From calm dashboards to expressive marketing sites, I help teams tell their story with React, Next.js, TypeScript, and dependable Python backends. Every project is an invitation to craft something welcoming, inclusive, and delightfully fast.
                 </motion.p>
               </div>
               <motion.div
@@ -188,9 +162,6 @@ export default function Home() {
               <span className="inline-flex h-2 w-2 rounded-full bg-white/20" />
             </div>
           </motion.div>
-          </div>
-        </section>
-
         </div>
       </section>
 
@@ -221,8 +192,8 @@ export default function Home() {
             <ProjectCard key={p.slug} project={p} index={i} />
           ))}
         </div>
-        </section>
-        </div>
-      </main>
+      </section>
+    </div>
   );
 }
+
