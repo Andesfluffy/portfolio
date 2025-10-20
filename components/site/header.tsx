@@ -32,12 +32,12 @@ export function Header() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-emerald-100/70 bg-white/85 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+    <header className="sticky top-0 z-40 w-full border-b border-emerald-300/60 bg-emerald-50/80 backdrop-blur supports-[backdrop-filter]:bg-emerald-50/70">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <motion.div whileHover={{ scale: 1.02, rotate: -0.3 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
           <Link href="/" className="inline-flex items-center gap-2 font-semibold tracking-tight">
-            <span className="inline-block h-2 w-2 rounded-full bg-[radial-gradient(circle,_#5bc590,_transparent_60%)]" />
-            <span className="bg-gradient-to-r from-[#1f8a4d] via-[#37b46c] to-[#7cdba7] bg-clip-text text-transparent">
+            <span className="inline-block h-2 w-2 rounded-full bg-[radial-gradient(circle,_#2ea161,_transparent_60%)]" />
+            <span className="bg-gradient-to-r from-[#0f6b3b] via-[#1f9f5c] to-[#56c586] bg-clip-text text-transparent">
               Damola Oyeyemi
             </span>
           </Link>
@@ -53,7 +53,7 @@ export function Header() {
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
                   "relative px-0.5 py-2 text-sm transition-colors",
-                  isActive ? "text-emerald-900" : "text-emerald-800/70 hover:text-emerald-900"
+                  isActive ? "text-emerald-950" : "text-emerald-900/60 hover:text-emerald-950"
                 )}
               >
                 <span className="relative">
@@ -61,7 +61,7 @@ export function Header() {
                   {isActive && (
                     <motion.span
                       layoutId="nav-underline"
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-[linear-gradient(90deg,_#1f8a4d_0%,_#7cdba7_100%)]"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-[linear-gradient(90deg,_#0f6b3b_0%,_#56c586_100%)]"
                       transition={{ type: "spring", stiffness: 500, damping: 30 }}
                     />
                   )}
@@ -72,7 +72,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button asChild variant="ghost" className="rounded-full border border-emerald-100 bg-white/70 px-4 text-xs uppercase tracking-[0.25em] text-emerald-700 transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-900">
+          <Button asChild variant="ghost" className="rounded-full border border-emerald-400 bg-emerald-50/80 px-4 text-xs uppercase tracking-[0.25em] text-emerald-800 transition hover:border-emerald-500 hover:bg-emerald-100 hover:text-emerald-950">
             <Link href="mailto:hello@damolaoyeyemi.dev">Let&apos;s talk</Link>
           </Button>
         </div>
@@ -84,7 +84,7 @@ export function Header() {
                 variant="ghost"
                 size="icon"
                 aria-label="Open menu"
-                className="rounded-full border border-emerald-100 bg-emerald-50 text-emerald-700 transition hover:bg-emerald-100"
+                className="rounded-full border border-emerald-400 bg-emerald-100 text-emerald-800 transition hover:bg-emerald-200"
               >
                 <Menu className="h-5 w-5" />
               </Button>
@@ -101,7 +101,7 @@ export function Header() {
                       aria-current={isActive ? "page" : undefined}
                       className={cn(
                         "text-lg font-medium transition",
-                        isActive ? "text-emerald-900" : "text-emerald-700/80 hover:text-emerald-900"
+                        isActive ? "text-emerald-950" : "text-emerald-800/80 hover:text-emerald-950"
                       )}
                     >
                       {item.label}

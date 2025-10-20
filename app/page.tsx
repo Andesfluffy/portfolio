@@ -24,17 +24,17 @@ const categories = [
 export default function Home() {
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 pb-20 pt-12 sm:px-8 lg:px-12">
-      <section className="relative overflow-hidden rounded-[36px] border border-emerald-100 bg-white text-emerald-900 shadow-[0_40px_120px_-50px_rgba(38,142,85,0.35)]">
+      <section className="relative overflow-hidden rounded-[36px] border border-emerald-300 bg-white text-emerald-950 shadow-[0_40px_120px_-50px_rgba(15,107,59,0.35)]">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#f7fcf9] via-[#f0fbf5] to-[#aee9c7]/35" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#e7f3ec] via-[#c0e2ce] to-[#58b27c]/40" />
           <div className="absolute inset-0 [mask-image:radial-gradient(1250px_720px_at_50%_-20%,white,transparent)]" />
         </div>
 
         <div className="relative z-10 flex flex-col gap-12 p-6 sm:p-10 lg:gap-16 lg:p-16">
-          <header className="flex flex-wrap items-center justify-between gap-6 text-sm text-emerald-900/70">
+          <header className="flex flex-wrap items-center justify-between gap-6 text-sm text-emerald-900/80">
             <div className="flex items-center gap-3">
               <span className="text-base font-semibold tracking-tight text-emerald-950 sm:text-lg">Damola Oyeyemi</span>
-              <span className="hidden items-center gap-2 rounded-full border border-emerald-100 bg-white/70 px-4 py-1 uppercase tracking-[0.25em] text-emerald-700 sm:inline-flex">
+              <span className="hidden items-center gap-2 rounded-full border border-emerald-300 bg-white/80 px-4 py-1 uppercase tracking-[0.25em] text-emerald-800 sm:inline-flex">
                 <span>Portfolio</span>
               </span>
             </div>
@@ -42,13 +42,13 @@ export default function Home() {
 
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,420px)] lg:items-center">
             <div className="max-w-xl space-y-10">
-              <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">
-                <span className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-1 text-[0.7rem] text-emerald-700 shadow-[0_8px_30px_rgba(59,184,120,0.2)]">
+              <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-emerald-600">
+                <span className="inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-emerald-100 px-4 py-1 text-[0.7rem] text-emerald-800 shadow-[0_8px_30px_rgba(31,128,74,0.25)]">
                   Full-Stack Developer
                 </span>
                 <span className="hidden items-center gap-2 sm:inline-flex">
-                  <span className="h-1 w-1 rounded-full bg-emerald-400" />
-                  <span className="text-emerald-900/70">Based in Lagos</span>
+                  <span className="h-1 w-1 rounded-full bg-emerald-500" />
+                  <span className="text-emerald-900/80">Based in Lagos</span>
                 </span>
               </div>
               <div className="space-y-6">
@@ -59,7 +59,7 @@ export default function Home() {
                   className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl"
                 >
                   Crafting{" "}
-                  <span className="bg-gradient-to-r from-[#c6f1d8] via-[#92e3b4] to-[#64ce90] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#8fdab1] via-[#4fb87e] to-[#1f8a4d] bg-clip-text text-transparent">
                     digital experiences
                   </span>{" "}
                   that feel personal, polished, and alive.
@@ -68,7 +68,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.1 }}
-                  className="text-base text-emerald-900/75 sm:text-lg"
+                  className="text-base text-emerald-900/85 sm:text-lg"
                 >
                   I&apos;m <strong>Damola Oyeyemi</strong>, a full-stack engineer who loves pairing thoughtful strategy with elegant code. From calm dashboards to expressive marketing sites, I help teams tell their story with React, Next.js, TypeScript, and dependable Python backends. Every project is an invitation to craft something welcoming, inclusive, and delightfully fast.
                 </motion.p>
@@ -82,7 +82,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   asChild
-                  className="h-12 rounded-full bg-emerald-600 px-8 text-base font-medium text-white transition hover:bg-emerald-500"
+                  className="h-12 rounded-full bg-emerald-700 px-8 text-base font-medium text-white transition hover:bg-emerald-600"
                 >
                   <Link href="mailto:hello@damolaoyeyemi.dev">Start a Conversation</Link>
                 </Button>
@@ -90,7 +90,7 @@ export default function Home() {
                   size="lg"
                   variant="outline"
                   asChild
-                  className="h-12 rounded-full border-emerald-200 bg-white/70 px-8 text-base font-medium text-emerald-700 backdrop-blur transition hover:bg-emerald-50 hover:text-emerald-900"
+                  className="h-12 rounded-full border-emerald-400 bg-white/75 px-8 text-base font-medium text-emerald-800 backdrop-blur transition hover:bg-emerald-100 hover:text-emerald-950"
                 >
                   <Link href="/projects">Browse Recent Wins</Link>
                 </Button>
@@ -101,18 +101,18 @@ export default function Home() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="relative isolate overflow-hidden rounded-[32px] border border-emerald-100 bg-emerald-50/80 p-6 shadow-[0_45px_120px_-50px_rgba(38,142,85,0.35)]"
+              className="relative isolate overflow-hidden rounded-[32px] border border-emerald-300 bg-emerald-100/80 p-6 shadow-[0_45px_120px_-50px_rgba(15,107,59,0.35)]"
             >
-              <div className="absolute -top-32 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-200/40 blur-3xl" />
-              <div className="absolute inset-0 rounded-[24px] border border-emerald-100/70 bg-gradient-to-br from-white/70 via-transparent to-emerald-100/60" />
+              <div className="absolute -top-32 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-300/35 blur-3xl" />
+              <div className="absolute inset-0 rounded-[24px] border border-emerald-300/60 bg-gradient-to-br from-white/75 via-transparent to-emerald-200/50" />
               <div className="relative z-10 flex flex-col gap-6">
-                <div className="flex items-center justify-between text-xs uppercase tracking-[0.35em] text-emerald-700/80">
+                <div className="flex items-center justify-between text-xs uppercase tracking-[0.35em] text-emerald-800/90">
                   <span>Profile</span>
-                  <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[0.65rem] text-emerald-700">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400 bg-emerald-100 px-3 py-1 text-[0.65rem] text-emerald-800">
                     Available
                   </span>
                 </div>
-                <div className="relative overflow-hidden rounded-[24px] border border-emerald-100 bg-white/70">
+                <div className="relative overflow-hidden rounded-[24px] border border-emerald-300 bg-white/80">
                   <motion.div
                     initial={{ scale: 1 }}
                     animate={{ scale: 1.02 }}
@@ -132,8 +132,8 @@ export default function Home() {
                   </motion.div>
                   <div className="relative pt-[120%]" />
                 </div>
-                <div className="flex flex-col gap-2 text-sm text-emerald-800/80">
-                  <p className="text-emerald-900 font-medium">Damola Oyeyemi</p>
+                <div className="flex flex-col gap-2 text-sm text-emerald-900/75">
+                  <p className="text-emerald-950 font-medium">Damola Oyeyemi</p>
                   <p>Building inclusive, delightful digital products with heart.</p>
                 </div>
               </div>
@@ -144,22 +144,22 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="flex flex-col gap-4 text-sm text-emerald-800/80 sm:flex-row sm:items-center sm:justify-between"
+            className="flex flex-col gap-4 text-sm text-emerald-900/75 sm:flex-row sm:items-center sm:justify-between"
           >
             <div className="flex items-center gap-3 text-emerald-900">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-200 text-emerald-700">
                 <Mail className="size-5" />
               </div>
               <div>
-                <span className="block text-xs uppercase tracking-[0.4em] text-emerald-800/60">Email</span>
+                <span className="block text-xs uppercase tracking-[0.4em] text-emerald-900/60">Email</span>
                 <span className="font-medium">hello@damolaoyeyemi.dev</span>
               </div>
             </div>
-            <div className="hidden h-px flex-1 bg-emerald-100 sm:block" aria-hidden="true" />
-            <div className="flex items-center gap-3 text-xs uppercase tracking-[0.45em] text-emerald-800/60">
-              <span className="inline-flex h-2 w-2 rounded-full bg-emerald-200" />
-              <span className="inline-flex h-2 w-2 rounded-full bg-emerald-400/70" />
-              <span className="inline-flex h-2 w-2 rounded-full bg-emerald-200/60" />
+            <div className="hidden h-px flex-1 bg-emerald-300/70 sm:block" aria-hidden="true" />
+            <div className="flex items-center gap-3 text-xs uppercase tracking-[0.45em] text-emerald-900/60">
+              <span className="inline-flex h-2 w-2 rounded-full bg-emerald-300" />
+              <span className="inline-flex h-2 w-2 rounded-full bg-emerald-500/70" />
+              <span className="inline-flex h-2 w-2 rounded-full bg-emerald-300/60" />
             </div>
           </motion.div>
         </div>
@@ -168,7 +168,7 @@ export default function Home() {
       <section className="space-y-10">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-700/80">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-800/80">
               Expertise
             </p>
             <h2 className="text-2xl font-semibold tracking-tight">
@@ -180,7 +180,7 @@ export default function Home() {
               <Button
                 key={category}
                 variant="ghost"
-                className="rounded-full border border-transparent bg-transparent px-4 py-0 text-sm font-medium text-emerald-800/80 transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-900"
+                className="rounded-full border border-transparent bg-transparent px-4 py-0 text-sm font-medium text-emerald-900/70 transition hover:border-emerald-400 hover:bg-emerald-100 hover:text-emerald-950"
               >
                 {category}
               </Button>
