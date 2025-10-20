@@ -188,6 +188,8 @@ export default function Home() {
               <span className="inline-flex h-2 w-2 rounded-full bg-white/20" />
             </div>
           </motion.div>
+          </div>
+        </section>
 
         </div>
       </section>
