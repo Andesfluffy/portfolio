@@ -38,20 +38,24 @@ export default function Home() {
                 <span>Portfolio</span>
               </span>
             </div>
-            <nav className="flex flex-wrap items-center gap-4 font-medium text-white/60">
-              <Link href="#" className="transition hover:text-white">
-                Home
-              </Link>
-              <Link href="/projects" className="transition hover:text-white">
-                Projects
-              </Link>
-              <Link href="/about" className="transition hover:text-white">
-                About
-              </Link>
-              <Button
-                size="sm"
-                asChild
-                className="rounded-full bg-[#f8bfa8] px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-black shadow-[0_8px_30px_rgba(248,191,168,0.45)] transition hover:bg-[#f4ad87]"
+          </div>
+
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,400px)] lg:items-stretch lg:gap-14 xl:grid-cols-[minmax(0,1.05fr)_minmax(340px,440px)] xl:gap-16">
+            <div className="max-w-xl space-y-6">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight"
+              >
+                Crafting <span className="bg-gradient-to-r from-[#c7a3ff] via-[#8f6bff] to-[#7dd3fc] bg-clip-text text-transparent">digital experiences</span>
+                <br /> that feel personal, polished, and alive.
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="text-base sm:text-lg text-white/80"
               >
                 <Link href="mailto:hello@damolaoyeyemi.dev">Let&apos;s Talk</Link>
               </Button>
@@ -184,6 +188,7 @@ export default function Home() {
               <span className="inline-flex h-2 w-2 rounded-full bg-white/20" />
             </div>
           </motion.div>
+
         </div>
       </section>
 
