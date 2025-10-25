@@ -79,15 +79,19 @@ export default async function ProjectPage({ params }: Props) {
 
       <div className="prose prose-neutral dark:prose-invert max-w-none">
         <h2>Overview</h2>
-        <p>
-          This project showcases a modern web app setup with Next.js, TypeScript, Tailwind CSS, and shadcn/ui.
-          It focuses on performance, accessibility, and clean design.
-        </p>
-        <ul>
-          <li>Responsive UI and accessible components</li>
-          <li>Clean, type-safe code structure</li>
-          <li>Animations with Framer Motion where it adds value</li>
-        </ul>
+        <p>{project.overview}</p>
+        {project.highlights.length > 0 && (
+          <>
+            <h3>Project Breakdown</h3>
+            <ul>
+              {project.highlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
+          </>
+        )}
+        <h3>Stack</h3>
+        <p>{project.tags.join(", ")}</p>
       </div>
     </div>
   );
