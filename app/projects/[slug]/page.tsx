@@ -50,7 +50,7 @@ export default async function ProjectPage({ params }: Props) {
             <Badge key={t} variant="secondary">{t}</Badge>
           ))}
         </div>
-        <div className="flex gap-3 pt-2">
+        <div className="flex flex-wrap gap-3 pt-2">
           {project.url && (
             <Button asChild>
               <Link href={project.url} target="_blank" rel="noreferrer">Live Demo</Link>
