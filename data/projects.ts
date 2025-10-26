@@ -12,6 +12,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "aurora-workspace",
+    title: "Aurora Workspace",
+    description:
+      "Personal information manager that unifies notes, contacts, and task planning in a single, real-time workspace.",
+    overview:
+      "Aurora Workspace is a calm command centre for busy professionals. I designed the experience to keep notebooks, relationship tracking, and actionable tasks perfectly in sync across devices while maintaining a polished, brand-forward landing page.",
+    highlights: [
+      "Responsive marketing site built with Next.js App Router, Framer Motion micro-interactions, and layered glassmorphism aesthetics inspired by calm productivity brands.",
+      "Supabase-backed workspace that keeps notes, contact records, and tasks synchronised with row-level security and optimistic UI updates.",
+      "Google sign-in, shared labels, and reminder flows that help people stay organised without sacrificing privacy or ease-of-use.",
+    ],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Framer Motion"],
+    image: "https://images.unsplash.com/photo-1618005198919-d3d4b5a92eee?auto=format&fit=crop&w=1600&q=80",
+    url: "https://auroraworkspace.vercel.app/",
+    repo: "https://github.com/Andesfluffy/PIM-APP",
+  },
+  {
     slug: "helix-pay",
     title: "HelixPay",
     description:
